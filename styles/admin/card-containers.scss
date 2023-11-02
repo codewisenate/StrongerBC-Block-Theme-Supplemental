@@ -1,0 +1,110 @@
+html :where(.editor-styles-wrapper) {
+
+	.feature-card-group {
+
+		.feature-card {
+			background-color: transparent;
+			background-image: $feature-card-container-bottom-white;
+			background-repeat: no-repeat;
+			background-position: bottom center;
+			background-size: 100%;
+			width: 100%;
+
+			.wp-block-cover {
+				aspect-ratio: 4/3;
+				min-height: auto;
+				width: 100%;
+				padding: 0;
+				overflow: hidden;
+
+				.wp-block-cover__background {
+					display: none;
+				}
+
+				.wp-block-cover__image-background {
+					height: 100%;
+				}
+
+				.wp-block-cover__inner-container {
+					background-image: $feature-card-general-headline-bg;
+					background-repeat: no-repeat;
+					background-size: 100%;
+					background-position: top right;
+					padding: 1rem 2rem 0.5rem;
+					width: calc(80% - 2rem);
+					filter: var(--card-drop-shadow);
+				}
+			}
+
+		}
+	}
+
+	.wp-block-columns {
+
+		justify-content: center;
+
+		.wp-block-column {
+			border-radius: 0;
+		}
+	}
+
+	.economicplan-card-section{
+		.feature-card-group {
+			.feature-card {
+				.wp-block-cover__inner-container {
+					background-image: $feature-card-economicplan-headline-bg;
+				}
+			}
+		}
+		.wp-block-group {
+			.wp-block-buttons {
+				.wp-block-button {
+					&__link {
+						background-color: var(--wp--preset--color--accent);
+						color: var(--wp--preset--color--custom-plan-blue-background);
+					}
+				}
+			}
+		}
+	}
+	.economicplan-goal-section {
+		.feature-card-group {
+			.feature-card {
+				background-image: $feature-card-container-bottom-blue;
+				.wp-block-cover__inner-container {
+					background-image: $feature-card-economicplan-headline-bg;
+				}
+			}
+		}
+	}
+
+	.housing-card-section {
+		.feature-card-group {
+			.feature-card {
+				.wp-block-cover__inner-container {
+					background-image: $feature-card-housing-headline-bg;
+				}
+			}
+
+			.wp-block-group {
+				.wp-block-buttons {
+					.wp-block-button {
+						&__link {
+							background-color: var(--wp--preset--color--custom-housing-buttons);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.jobs-card-section {
+		.feature-card-group {
+			.feature-card {
+				.wp-block-cover__inner-container {
+					background-image: $feature-card-jobs-headline-bg;
+				}
+			}
+		}
+	}
+}

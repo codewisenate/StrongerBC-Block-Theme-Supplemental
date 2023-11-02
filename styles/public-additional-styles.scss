@@ -1,24 +1,36 @@
+@import './variables.scss';
+@import './public/blocks.scss';
+@import './public/card-containers.scss';
+@import './public/footer.scss';
+@import './public/header.scss';
+@import './public/housing-stats.scss';
+@import './public/landing.scss';
+@import './public/mobile.scss';
+@import './public/navigation.scss';
+@import './public/sections.scss';
+
 :root {
-	line-height: 1.5;
-	font-weight: 400;
-  
-	color-scheme: light dark;
-	color: $white;
-	background-color: $mineshaft;
-  
+	box-sizing: border-box;
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 }
-  
+
+html {
+	--scroll-padding: 2rem !important;
+}
+
 body {
 	padding: 0;
 	margin: 0;
-	display: flex;
-	place-items: center;
-	min-width: 840px;
-	min-height: 100vh;
+	flex-direction: column;
+	overflow-x: hidden;
+
+	.notification {
+		padding: 0.5rem 2rem;
+		width: calc(100vw - 4rem);
+	}
 }
   

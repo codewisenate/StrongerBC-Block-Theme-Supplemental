@@ -1,0 +1,10 @@
+html :where(.editor-styles-wrapper) {
+
+	.feature-card {
+
+		.wp-block-button .wp-block-button__link {
+			background-color: var(--wp--preset--color--secondary-brand);
+			padding: calc(0.5rem + 2px) calc(1.333rem + 2px);
+		}
+	}
+}

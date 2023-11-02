@@ -1,0 +1,76 @@
+.learn-how-columns {
+	flex-wrap: wrap !important;
+	gap: 1rem;
+
+	.wp-block-column {
+
+		@media (min-width: $breakpoint-sm) {
+			flex-basis: calc(50% - 2rem) !important;
+		}
+		@media (min-width: $breakpoint-lg) {
+			flex-basis: calc(25% - 2rem) !important;
+		}
+	}
+
+	a {
+		&:hover,
+		&:focus-visible {
+			outline: none;
+			.learn-how-container {
+				outline: 2px solid var(--wp--preset--color--primary-brand);
+			}
+		}
+	}
+
+	.learn-how-container {
+		max-height: 250px;
+		overflow: hidden;
+		box-shadow: var(--box-shadow);
+
+		// &:hover,
+		// &:focus-visible {
+		// 	outline: 2px solid var(--wp--preset--color--primary-brand);
+		// }
+
+		.learn-how-cover {
+			overflow: hidden;
+			border-radius: 2rem;
+			
+			min-height: 250px;
+			max-height: 250px;
+			padding: 0;
+
+			.title {
+				background-image: $swoosh-label-white;
+				background-position: bottom;
+				background-repeat: no-repeat;
+				width: 80%;
+				height: 100px;
+				margin: auto;
+				padding: 0;
+				position: absolute;
+				bottom: -1px;
+				left: 0;
+				right: 0;
+				top: auto;
+
+				h3 {
+					display: none;
+				}
+
+				img {
+					max-width: fit-content;
+					padding: 0.5rem 1rem 2rem;
+				}
+			}
+
+			img {
+				max-height: 250px;
+				margin: auto;
+				position: absolute;
+				left: 0;
+				right: 0;
+			}
+		}
+	}
+}

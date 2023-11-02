@@ -1,0 +1,91 @@
+html :where(.editor-styles-wrapper) {
+
+	.card-section {
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: top right;
+		padding-top: 10rem;
+	}
+
+	.home-card-section {
+		background-image: $home-bg;
+	}
+
+	.health-card-section {
+		background-image: $healthcare-bg;
+	}
+
+	.cost-card-section {
+		background-image: $costofliving-bg;
+	}
+
+	.housing-card-section {
+		background-image: $housing-bg;
+	}
+
+	.jobs-card-section {
+		background-image: $jobstraining-bg;
+	}
+
+	.safer-card-section {
+		background-image: $safercommunities-bg;
+	}
+
+	.climate-card-section {
+		background-image: $climateaction-bg;
+	}
+
+	.economicplan-card-section {
+		background-image: $economicplan-bg;
+	}
+
+	.highlight {
+
+		background-color: transparent;
+		
+		.highlight-cover {
+			overflow: hidden;
+			margin: 0 !important;
+			padding: 0;
+			min-width: 100%;
+			width: auto;
+
+			.wp-block-cover__inner-container {
+				min-height: auto;
+				height: auto;
+				width: 100% !important;
+			}
+
+			.highlight-swoosh {
+				aspect-ratio: 10 / 1;
+				width: 100vw;
+				height: 10vw;
+				content: " ";
+				display: block;
+				background-color: transparent;
+				background-image: $swoosh-white;
+
+				&.stroke {
+					background-image: $swoosh-white-stroke;
+					filter: var(--highlight-drop-shadow);
+				}
+
+				background-position: top right;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-color: transparent;
+				position: relative;
+				bottom: -1px;
+				width: calc(100% + 2px);
+				z-index: -1;
+			}
+
+		}
+
+		.highlight-content {
+			top: -5vw;
+			position: relative;
+			z-index: 1;
+		}
+	}
+}

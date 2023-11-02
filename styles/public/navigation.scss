@@ -1,0 +1,25 @@
+body.custom-strongerbc {
+
+	.is-style-ribbon-menu .has-modal-open {
+	
+		.ul-main-nav > li > a {
+			border: none !important;
+		}
+	
+		.wp-block-navigation__container {
+			gap: 0.5rem !important;
+		
+			.wp-block-navigation-item {
+				padding: 0;
+			}
+		}
+	}
+	
+	.language_switcher_options {
+		background-color: var(--wp--preset--color--secondary-brand) !important;
+	}
+}
+
+.wp-block-polylang-language-switcher {
+	display: none;
+}

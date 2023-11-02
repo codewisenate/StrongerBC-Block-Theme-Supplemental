@@ -1,3 +1,9 @@
+import './public/footer';
+import './public/landing';
+import './public/housing-stats';
+import './public/navigation';
+import './public/sections';
+
 import { qs } from './utils';
 /**
  * DOM manipulation.
@@ -7,13 +13,12 @@ const domReady = () => {
 	/*
 	 * SafarIE bug requires 0ms timeout.
 	 */
-	setTimeout(function() {
+	requestAnimationFrame(() => {
 		/**
 		 * Test import of util – remove when ready to use.
 		 */
 		const body = qs('body');
-		console.log('body loaded', body);
-	}, 0);
+	});
 };
 
 if ('complete' === document.readyState) {
