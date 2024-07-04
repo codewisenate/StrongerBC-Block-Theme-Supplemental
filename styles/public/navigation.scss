@@ -40,6 +40,7 @@ body.custom-strongerbc {
 	display: none;
 }
 
-.wp-block-navigation .has-child .wp-block-navigation__submenu-container>.wp-block-navigation-item>.wp-block-navigation-item__content {
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container > .wp-block-navigation-item > .wp-block-navigation-item__content * {
 	line-height: 1.5;
+	font-size: clamp(0.9rem, 0.875rem + ((1vw - 0.2rem) * 0.038), 1rem);
 }
