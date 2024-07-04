@@ -28,9 +28,36 @@ body {
 	flex-direction: column;
 	overflow-x: hidden;
 
+	.overflow-hidden {
+		overflow: hidden;
+	}
+
 	.notification {
 		padding: 0.5rem 2rem;
 		width: calc(100vw - 4rem);
+	}
+
+	@media (min-width: $breakpoint-sm) {
+		#post-content {
+			padding: 2rem;
+		}
+	}
+
+	.external {
+		min-width: 100%;
+		width: 100%;
+		box-sizing: border-box;
+		animation: widen 0.01s;
+	}
+
+	@keyframes widen {
+		from {
+			width: 0%;
+		}
+
+		to {
+			width: 100%;
+		}
 	}
 }
   

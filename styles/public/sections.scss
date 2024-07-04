@@ -2,9 +2,12 @@
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: top right;
-	padding: 4rem 1rem 1rem;
+	padding: 1rem;
 	@media (min-width: $breakpoint-sm) {
-		padding: 10rem 1rem 1rem;
+		padding: 1rem 2rem 2rem;
+	}
+	@media (min-width: $breakpoint-md) {
+		padding: 3rem 2rem 2rem;
 	}
 }
 
@@ -31,22 +34,22 @@
 	}
 }
 .cost-card-section {
-	background-image: $costofliving-bg;
+	// background-image: $costofliving-bg;
 }
 .housing-card-section {
-	background-image: $housing-bg;
+	// background-image: $housing-bg;
 }
 .jobs-card-section {
-	background-image: $jobstraining-bg;
+	// background-image: $jobstraining-bg;
 }
 .safer-card-section {
-	background-image: $safercommunities-bg;
+	// background-image: $safercommunities-bg;
 }
 .climate-card-section {
-	background-image: $climateaction-bg;
+	// background-image: $climateaction-bg;
 }
 .economicplan-card-section {
-	background-image: $economicplan-bg;
+	// background-image: $economicplan-bg;
 }
 
 
@@ -58,7 +61,6 @@
 		margin: 0 !important;
 		padding: 0;
 		min-width: 100%;
-		width: calc(100vw + 2rem) !important;
 
 		.wp-block-cover__inner-container {
 			min-height: auto;

@@ -1,12 +1,26 @@
 .page-landing-cover {
+	
+	--border-radius: 2rem;
+
+	border-radius: var(--border-radius) ;
 	overflow: hidden;
-	margin: 0;
 	padding: 0;
+	
+	margin: 1rem !important;
+	min-height: 40vh;
+	width: auto !important;
+	
+	@media (min-width: $breakpoint-sm) {
+		min-height: 70vh;
+		margin: 0 !important;
+	}
 
 	.wp-block-cover__inner-container {
 		min-height: auto;
 		height: auto;
 		width: 100% !important;
+		border-radius: var(--border-radius);
+		background-color: rgba(var(--secondary-brand-rgb),0.8);
 	}
 
 	.page-landing-content {
@@ -15,12 +29,12 @@
 		h1 {
 			line-height: 1.3;
 			margin: 0;
-			padding: 18vh 1rem 3rem;
+			padding: 1rem;
 			br {
 				display: none;
 			}
 			@media (min-width: $breakpoint-sm) {
-				padding: 10vw 0 3rem;
+				padding: 3rem 0;
 				br {
 					display: block;
 				}
@@ -30,10 +44,10 @@
 		content: " ";
 		display: block;
 		background-color: transparent;
-		background-image: $swoosh-landing-area-mobile;
+		// background-image: $swoosh-landing-area-mobile;
 		background-position: top left;
 		@media (min-width: $breakpoint-sm) {
-			background-image: $swoosh-landing-area;
+			// background-image: $swoosh-landing-area;
 			background-position: top center;
 		}
 		background-size: cover;

@@ -1,3 +1,4 @@
+import './public/accessibility';
 import './public/footer';
 import './public/landing';
 import './public/housing-stats';

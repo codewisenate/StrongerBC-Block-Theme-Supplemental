@@ -1,16 +1,32 @@
 body.custom-strongerbc {
 
-	.is-style-ribbon-menu .has-modal-open {
-	
-		.ul-main-nav > li > a {
-			border: none !important;
+	.wp-block-navigation ul.has-background {
+		padding: 0;
+	}
+
+	.is-style-ribbon-menu {
+
+		@media (max-width: $breakpoint-sm) {
+			background-color: var(--wp--preset--color--primary-brand) !important;
 		}
-	
-		.wp-block-navigation__container {
-			gap: 0.5rem !important;
+
+		nav.wp-block-navigation {
+			justify-content: center;
+			padding-right: 0;
+		}
+
+		.has-modal-open {
 		
-			.wp-block-navigation-item {
-				padding: 0;
+			.ul-main-nav > li > a {
+				border: none !important;
+			}
+		
+			.wp-block-navigation__container {
+				gap: 0.5rem !important;
+			
+				.wp-block-navigation-item {
+					padding: 0;
+				}
 			}
 		}
 	}
@@ -22,4 +38,8 @@ body.custom-strongerbc {
 
 .wp-block-polylang-language-switcher {
 	display: none;
+}
+
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container>.wp-block-navigation-item>.wp-block-navigation-item__content {
+	line-height: 1.5;
 }

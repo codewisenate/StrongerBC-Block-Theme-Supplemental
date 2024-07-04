@@ -41,15 +41,17 @@
 			padding: 0;
 
 			.title {
-				background-image: $swoosh-label-white;
+				// background-image: $swoosh-label-white;
+				background-color: $white;
 				background-position: bottom;
 				background-repeat: no-repeat;
-				width: 80%;
-				height: 100px;
+				border-radius: 99rem;
+				width: calc(75% - 2rem);
+				height: 85px;
+				padding: 0.5rem !important;
 				margin: auto;
-				padding: 0;
 				position: absolute;
-				bottom: -1px;
+				bottom: 1rem;
 				left: 0;
 				right: 0;
 				top: auto;
@@ -59,7 +61,7 @@
 				}
 
 				img {
-					max-width: fit-content;
+					max-width: 100%;
 					padding: 0.5rem 1rem 2rem;
 				}
 			}
