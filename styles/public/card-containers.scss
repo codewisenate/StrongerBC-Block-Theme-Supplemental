@@ -67,7 +67,7 @@
 			width: 100%;
 			padding: 0;
 			overflow: hidden;
-			-webkit-mask-image: -webkit-radial-gradient(white, black); // Safari fix
+			mask: radial-gradient(white, black); // Safari overflow fix
 
 			.wp-block-cover__background {
 				display: none;
